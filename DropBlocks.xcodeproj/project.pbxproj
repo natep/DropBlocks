@@ -16,13 +16,19 @@
 		9A6167001624F65600311E19 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A6166FF1624F65600311E19 /* Default.png */; };
 		9A6167021624F65600311E19 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A6167011624F65600311E19 /* Default@2x.png */; };
 		9A6167041624F65600311E19 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A6167031624F65600311E19 /* Default-568h@2x.png */; };
+		9A6167141624F6EA00311E19 /* DropBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6167131624F6EA00311E19 /* DropBlocks.m */; };
+		9A6167211624FB0D00311E19 /* DropBlocks.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9A61671E1624FB0D00311E19 /* DropBlocks.podspec */; };
+		9A6167221624FB0D00311E19 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9A61671F1624FB0D00311E19 /* LICENSE */; };
+		9A6167231624FB0D00311E19 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9A6167201624FB0D00311E19 /* Podfile */; };
+		9CEFE3F31D1E49A2A5EAAEBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 286B19289CA845DDBF5A6D31 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		286B19289CA845DDBF5A6D31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6166E91624F65600311E19 /* DropBlocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropBlocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A6166ED1624F65600311E19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9A6166EF1624F65600311E19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9A6166F11624F65600311E19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9A6166ED1624F65600311E19 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9A6166EF1624F65600311E19 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9A6166F11624F65600311E19 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9A6166F51624F65600311E19 /* DropBlocks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DropBlocks-Info.plist"; sourceTree = "<group>"; };
 		9A6166F71624F65600311E19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A6166F91624F65600311E19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -32,6 +38,12 @@
 		9A6166FF1624F65600311E19 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9A6167011624F65600311E19 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9A6167031624F65600311E19 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9A6167121624F6EA00311E19 /* DropBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBlocks.h; sourceTree = "<group>"; };
+		9A6167131624F6EA00311E19 /* DropBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBlocks.m; sourceTree = "<group>"; };
+		9A61671E1624FB0D00311E19 /* DropBlocks.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropBlocks.podspec; sourceTree = "<group>"; };
+		9A61671F1624FB0D00311E19 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9A6167201624FB0D00311E19 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D488E4E3973E435DAC4F8220 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,7 @@
 				9A6166EE1624F65600311E19 /* UIKit.framework in Frameworks */,
 				9A6166F01624F65600311E19 /* Foundation.framework in Frameworks */,
 				9A6166F21624F65600311E19 /* CoreGraphics.framework in Frameworks */,
+				9CEFE3F31D1E49A2A5EAAEBC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +66,9 @@
 			children = (
 				9A6166F31624F65600311E19 /* DropBlocks */,
 				9A6166EC1624F65600311E19 /* Frameworks */,
+				D488E4E3973E435DAC4F8220 /* Pods.xcconfig */,
 				9A6166EA1624F65600311E19 /* Products */,
+				9A61671C1624FAF600311E19 /* Text Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,7 @@
 				9A6166ED1624F65600311E19 /* UIKit.framework */,
 				9A6166EF1624F65600311E19 /* Foundation.framework */,
 				9A6166F11624F65600311E19 /* CoreGraphics.framework */,
+				286B19289CA845DDBF5A6D31 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,6 +96,7 @@
 			children = (
 				9A6166FC1624F65600311E19 /* AppDelegate.h */,
 				9A6166FD1624F65600311E19 /* AppDelegate.m */,
+				9A61670A1624F68000311E19 /* Classes */,
 				9A6166F41624F65600311E19 /* Supporting Files */,
 			);
 			path = DropBlocks;
@@ -99,6 +116,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9A61670A1624F68000311E19 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9A6167121624F6EA00311E19 /* DropBlocks.h */,
+				9A6167131624F6EA00311E19 /* DropBlocks.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9A61671C1624FAF600311E19 /* Text Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A61671E1624FB0D00311E19 /* DropBlocks.podspec */,
+				9A61671F1624FB0D00311E19 /* LICENSE */,
+				9A6167201624FB0D00311E19 /* Podfile */,
+			);
+			name = "Text Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +145,7 @@
 				9A6166E51624F65600311E19 /* Sources */,
 				9A6166E61624F65600311E19 /* Frameworks */,
 				9A6166E71624F65600311E19 /* Resources */,
+				C480C36A0B5C44F6B6AC7E12 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,10 +191,30 @@
 				9A6167001624F65600311E19 /* Default.png in Resources */,
 				9A6167021624F65600311E19 /* Default@2x.png in Resources */,
 				9A6167041624F65600311E19 /* Default-568h@2x.png in Resources */,
+				9A6167211624FB0D00311E19 /* DropBlocks.podspec in Resources */,
+				9A6167221624FB0D00311E19 /* LICENSE in Resources */,
+				9A6167231624FB0D00311E19 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C480C36A0B5C44F6B6AC7E12 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A6166E51624F65600311E19 /* Sources */ = {
@@ -166,6 +223,7 @@
 			files = (
 				9A6166FA1624F65600311E19 /* main.m in Sources */,
 				9A6166FE1624F65600311E19 /* AppDelegate.m in Sources */,
+				9A6167141624F6EA00311E19 /* DropBlocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +292,7 @@
 		};
 		9A6167081624F65600311E19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D488E4E3973E435DAC4F8220 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropBlocks/DropBlocks-Prefix.pch";
@@ -245,6 +304,7 @@
 		};
 		9A6167091624F65600311E19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D488E4E3973E435DAC4F8220 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropBlocks/DropBlocks-Prefix.pch";
@@ -273,6 +333,7 @@
 				9A6167091624F65600311E19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

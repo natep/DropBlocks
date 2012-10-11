@@ -157,55 +157,73 @@ static NSMutableSet* activeWrappers = nil;
 #pragma mark - Standard Dropbox callbacks
 
 - (void)restClient:(DBRestClient*)client loadedMetadata:(DBMetadata*)metadata {
-	LoadMetadataCallback handler = self.callback;
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadMetadataCallback handler = strongSelf.callback;
 	handler(metadata, nil);
-	[self cleanup];
+	[strongSelf cleanup];
 }
 
 - (void)restClient:(DBRestClient*)client metadataUnchangedAtPath:(NSString*)path {
-	LoadMetadataCallback handler = self.callback;
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadMetadataCallback handler = strongSelf.callback;
 	handler(nil, nil);
-	[self cleanup];
+	[strongSelf cleanup];
 }
 
 - (void)restClient:(DBRestClient*)client loadMetadataFailedWithError:(NSError*)error {
-	LoadMetadataCallback handler = self.callback;
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadMetadataCallback handler = strongSelf.callback;
 	handler(nil, error);
-	[self cleanup];
+	[strongSelf cleanup];
 }
 
 - (void)restClient:(DBRestClient*)client loadedDeltaEntries:(NSArray *)entries reset:(BOOL)shouldReset cursor:(NSString *)cursor hasMore:(BOOL)hasMore {
-	LoadDeltaCallback handler = self.callback;
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadDeltaCallback handler = strongSelf.callback;
 	handler(entries, shouldReset, cursor, hasMore, nil);
-	[self cleanup];
+	[strongSelf cleanup];
 }
 
 - (void)restClient:(DBRestClient*)client loadDeltaFailedWithError:(NSError *)error {
-	LoadDeltaCallback handler = self.callback;
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadDeltaCallback handler = strongSelf.callback;
 	handler(nil, NO, nil, NO, error);
-	[self cleanup];
+	[strongSelf cleanup];
 }
 
 - (void)restClient:(DBRestClient*)restClient loadedStreamableURL:(NSURL*)url forFile:(NSString*)path {
-	LoadStreamableURLCallback handler = self.callback;
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadStreamableURLCallback handler = strongSelf.callback;
 	handler(url, nil);
-	[self cleanup];
+	[strongSelf cleanup];
 }
 
 - (void)restClient:(DBRestClient*)restClient loadStreamableURLFailedWithError:(NSError*)error {
-	LoadStreamableURLCallback handler = self.callback;
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadStreamableURLCallback handler = strongSelf.callback;
 	handler(nil, error);
-	[self cleanup];
+	[strongSelf cleanup];
 }
 
 - (void)restClient:(DBRestClient*)client loadedFile:(NSString*)destPath contentType:(NSString*)contentType metadata:(DBMetadata*)metadata {
-	LoadFileCallback handler = self.callback;
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadFileCallback handler = strongSelf.callback;
 	handler(contentType, metadata, nil);
-	[self cleanup];
+	[strongSelf cleanup];
 }
 
 - (void)restClient:(DBRestClient*)client loadProgress:(CGFloat)progress forFile:(NSString*)destPath {
-	LoadFileProgressCallback handler = self.secondaryCallback;
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadFileProgressCallback handler = strongSelf.secondaryCallback;
 	
 	if (handler) {
 		handler(progress);
@@ -213,9 +231,11 @@ static NSMutableSet* activeWrappers = nil;
 }
 
 - (void)restClient:(DBRestClient*)client loadFileFailedWithError:(NSError*)error {
-	LoadFileCallback handler = self.callback;
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadFileCallback handler = strongSelf.callback;
 	handler(nil, nil, error);
-	[self cleanup];
+	[strongSelf cleanup];
 }
 
 @end

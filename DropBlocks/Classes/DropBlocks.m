@@ -59,19 +59,17 @@ static NSMutableSet* activeWrappers = nil;
 	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadMetadata:path];
 }
 
-///* Loads metadata for the object at the given root/path and returns the result to the delegate as a
-// dictionary */
-//- (void)loadMetadata:(NSString*)path withHash:(NSString*)hash;
-//
-///* This will load the metadata of a file at a given rev */
-//- (void)loadMetadata:(NSString *)path atRev:(NSString *)rev;
-//
++ (void)loadMetadata:(NSString*)path withHash:(NSString*)hash completionBlock:(LoadMetadataCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadMetadata:path withHash:hash];
+}
 
++ (void)loadMetadata:(NSString*)path atRev:(NSString *)rev completionBlock:(LoadMetadataCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadMetadata:path atRev:rev];
+}
 
 + (void)loadDelta:(NSString *)cursor completionBlock:(LoadDeltaCallback)completionBlock {
 	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadDelta:cursor];
 }
-
 
 + (void)loadFile:(NSString *)path intoPath:(NSString *)destinationPath completionBlock:(LoadFileCallback)completionBlock progressBlock:(LoadFileProgressCallback)progressBlock {
 	DropBlocks* db = [DropBlocks newInstanceWithCallback:completionBlock];
@@ -79,45 +77,59 @@ static NSMutableSet* activeWrappers = nil;
 	[db.restClient loadFile:path intoPath:destinationPath];
 }
 
++ (void)loadFile:(NSString *)path atRev:(NSString *)rev intoPath:(NSString *)destinationPath completionBlock:(LoadFileCallback)completionBlock progressBlock:(LoadFileProgressCallback)progressBlock {
+	DropBlocks* db = [DropBlocks newInstanceWithCallback:completionBlock];
+	db.secondaryCallback = progressBlock;
+	[db.restClient loadFile:path atRev:rev intoPath:destinationPath];
+}
 
-///* This will load a file as it existed at a given rev */
-//- (void)loadFile:(NSString *)path atRev:(NSString *)rev intoPath:(NSString *)destPath;
-//
+
 //- (void)cancelFileLoad:(NSString*)path;
-//
-//
-//- (void)loadThumbnail:(NSString *)path ofSize:(NSString *)size intoPath:(NSString *)destinationPath;
+
+
++ (void)loadThumbnail:(NSString *)path ofSize:(NSString *)size intoPath:(NSString *)destinationPath completionBlock:(LoadThumbnailCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadThumbnail:path ofSize:size intoPath:destinationPath];
+}
+
+
 //- (void)cancelThumbnailLoad:(NSString*)path size:(NSString*)size;
-//
-///* Uploads a file that will be named filename to the given path on the server. sourcePath is the
-// full path of the file you want to upload. If you are modifying a file, parentRev represents the
-// rev of the file before you modified it as returned from the server. If you are uploading a new
-// file set parentRev to nil. */
-//- (void)uploadFile:(NSString *)filename toPath:(NSString *)path withParentRev:(NSString *)parentRev
-//		  fromPath:(NSString *)sourcePath;
-//
+
+
++ (void)uploadFile:(NSString *)filename toPath:(NSString *)path withParentRev:(NSString *)parentRev fromPath:(NSString *)sourcePath completionBlock:(UploadFileCallback)completionBlock progressBlock:(UploadFileProgressCallback)progressBlock {
+	DropBlocks* db = [DropBlocks newInstanceWithCallback:completionBlock];
+	db.secondaryCallback = progressBlock;
+	[db.restClient uploadFile:filename toPath:path withParentRev:parentRev fromPath:sourcePath];
+}
+
+
 //- (void)cancelFileUpload:(NSString *)path;
 //
 ///* Avoid using this because it is very easy to overwrite conflicting changes. Provided for backwards
 // compatibility reasons only */
 //- (void)uploadFile:(NSString*)filename toPath:(NSString*)path fromPath:(NSString *)sourcePath __attribute__((deprecated));
-//
-///* These calls allow you to upload files in chunks, which is better for file larger than a few megabytes.
-// You can append bytes to the file using -[DBRestClient uploadFileChunk:offset:uploadId:] and then call
-// -[DBRestClient uploadFile:toPath:withParentRev:fromUploadId:] to turn the bytes appended at that uploadId
-// into an actual file in the user's Dropbox.
-// Use a nil uploadId to start uploading a new file. */
-//- (void)uploadFileChunk:(NSString *)uploadId offset:(unsigned long long)offset fromPath:(NSString *)localPath;
-//- (void)uploadFile:(NSString *)filename toPath:(NSString *)parentFolder withParentRev:(NSString *)parentRev
-//	  fromUploadId:(NSString *)uploadId;
-//
-//
-///* Loads a list of up to 10 DBMetadata objects representing past revisions of the file at path */
-//- (void)loadRevisionsForFile:(NSString *)path;
-//
-///* Same as above but with a configurable limit to number of DBMetadata objects returned, up to 1000 */
-//- (void)loadRevisionsForFile:(NSString *)path limit:(NSInteger)limit;
-//
+
+
++ (void)uploadFileChunk:(NSString *)uploadId offset:(unsigned long long)offset fromPath:(NSString *)localPath completionBlock:(UploadFileChunkCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient uploadFileChunk:uploadId offset:offset fromPath:localPath];
+}
+
++ (void)uploadFile:(NSString *)filename toPath:(NSString *)parentFolder withParentRev:(NSString *)parentRev fromUploadId:(NSString *)uploadId completionBlock:(UploadFileCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient uploadFile:filename toPath:parentFolder withParentRev:parentRev fromUploadId:uploadId];
+}
+
++ (void)loadRevisionsForFile:(NSString *)path completionBlock:(LoadRevisionsCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadRevisionsForFile:path];
+}
+
++ (void)loadRevisionsForFile:(NSString *)path limit:(NSInteger)limit completionBlock:(LoadRevisionsCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadRevisionsForFile:path limit:limit];
+}
+
+
+
+
+
+
 ///* Restores a file at path as it existed at the given rev and returns the metadata of the restored
 // file after restoration */
 //- (void)restoreFile:(NSString *)path toRev:(NSString *)rev;
@@ -237,5 +249,103 @@ static NSMutableSet* activeWrappers = nil;
 	handler(nil, nil, error);
 	[strongSelf cleanup];
 }
+
+- (void)restClient:(DBRestClient*)client loadedThumbnail:(NSString*)destPath metadata:(DBMetadata*)metadata {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadThumbnailCallback handler = strongSelf.callback;
+	handler(metadata, nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client loadThumbnailFailedWithError:(NSError*)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadThumbnailCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client uploadedFile:(NSString*)destPath from:(NSString*)srcPath
+		  metadata:(DBMetadata*)metadata {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	UploadFileCallback handler = strongSelf.callback;
+	handler(metadata, nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client uploadProgress:(CGFloat)progress
+		   forFile:(NSString*)destPath from:(NSString*)srcPath {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	UploadFileProgressCallback handler = strongSelf.secondaryCallback;
+	
+	if (handler) {
+		handler(progress);
+	}
+}
+
+- (void)restClient:(DBRestClient*)client uploadFileFailedWithError:(NSError*)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	UploadFileCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient *)client uploadedFileChunk:(NSString *)uploadId newOffset:(unsigned long long)offset
+		  fromFile:(NSString *)localPath expires:(NSDate *)expiresDate {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	UploadFileChunkCallback handler = strongSelf.callback;
+	handler(offset, expiresDate, nil);
+	[strongSelf cleanup];
+}
+ 
+- (void)restClient:(DBRestClient *)client uploadFileChunkFailedWithError:(NSError *)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	UploadFileChunkCallback handler = strongSelf.callback;
+	handler(0, nil, error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient *)client uploadedFile:(NSString *)destPath fromUploadId:(NSString *)uploadId
+		  metadata:(DBMetadata *)metadata {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	UploadFileCallback handler = strongSelf.callback;
+	handler(metadata, nil);
+	[strongSelf cleanup];
+}
+ 
+- (void)restClient:(DBRestClient *)client uploadFromUploadIdFailedWithError:(NSError *)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	UploadFileCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client loadedRevisions:(NSArray *)revisions forFile:(NSString *)path {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadRevisionsCallback handler = strongSelf.callback;
+	handler(revisions, nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client loadRevisionsFailedWithError:(NSError *)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadRevisionsCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
+
+
+
+
 
 @end

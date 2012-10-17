@@ -125,35 +125,45 @@ static NSMutableSet* activeWrappers = nil;
 	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadRevisionsForFile:path limit:limit];
 }
 
++ (void)restoreFile:(NSString *)path toRev:(NSString *)rev completionBlock:(RestoreFileCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient restoreFile:path toRev:rev];
+}
 
++ (void)createFolder:(NSString*)path completionBlock:(CreateFolderCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient createFolder:path];
+}
 
++ (void)deletePath:(NSString*)path completionBlock:(DeletePathCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient deletePath:path];
+}
 
++ (void)copyFrom:(NSString*)fromPath toPath:(NSString *)toPath completionBlock:(CopyPathCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient copyFrom:fromPath toPath:toPath];
+}
 
++ (void)createCopyRef:(NSString *)path completionBlock:(CreateCopyRefCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient createCopyRef:path];
+}
 
-///* Restores a file at path as it existed at the given rev and returns the metadata of the restored
-// file after restoration */
-//- (void)restoreFile:(NSString *)path toRev:(NSString *)rev;
-//
-///* Creates a folder at the given root/path */
-//- (void)createFolder:(NSString*)path;
-//
-//- (void)deletePath:(NSString*)path;
-//
-//- (void)copyFrom:(NSString*)fromPath toPath:(NSString *)toPath;
-//
-//- (void)createCopyRef:(NSString *)path; // Used to copy between Dropboxes
-//- (void)copyFromRef:(NSString*)copyRef toPath:(NSString *)toPath; // Takes copy ref created by above call
-//
-//- (void)moveFrom:(NSString*)fromPath toPath:(NSString *)toPath;
-//
-//- (void)loadAccountInfo;
-//
-//- (void)searchPath:(NSString*)path forKeyword:(NSString*)keyword;
-//
-//- (void)loadSharableLinkForFile:(NSString *)path;
-//- (void)loadSharableLinkForFile:(NSString *)path shortUrl:(BOOL)createShortUrl;
-//
++ (void)copyFromRef:(NSString*)copyRef toPath:(NSString *)toPath completionBlock:(CopyFromRefCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient copyFromRef:copyRef toPath:toPath];
+}
 
++ (void)moveFrom:(NSString*)fromPath toPath:(NSString *)toPath completionBlock:(MovePathCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient moveFrom:fromPath toPath:toPath];
+}
+
++ (void)loadAccountInfo:(LoadAccountInfoCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadAccountInfo];
+}
+
++ (void)searchPath:(NSString*)path forKeyword:(NSString*)keyword completionBlock:(SearchPathCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient searchPath:path forKeyword:keyword];
+}
+
++ (void)loadSharableLinkForFile:(NSString *)path shortUrl:(BOOL)createShortUrl completionBlock:(LoadSharableLinkCallback)completionBlock {
+	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadSharableLinkForFile:path shortUrl:createShortUrl];
+}
 
 + (void)loadStreamableURLForFile:(NSString *)path completionBlock:(LoadStreamableURLCallback)completionBlock {
 	[[DropBlocks newInstanceWithCallback:completionBlock].restClient loadStreamableURLForFile:path];
@@ -344,8 +354,164 @@ static NSMutableSet* activeWrappers = nil;
 	[strongSelf cleanup];
 }
 
+- (void)restClient:(DBRestClient*)client restoredFile:(DBMetadata *)fileMetadata {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	RestoreFileCallback handler = strongSelf.callback;
+	handler(fileMetadata, nil);
+	[strongSelf cleanup];
+}
 
+- (void)restClient:(DBRestClient*)client restoreFileFailedWithError:(NSError *)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	RestoreFileCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
 
+- (void)restClient:(DBRestClient*)client createdFolder:(DBMetadata*)folder {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	CreateFolderCallback handler = strongSelf.callback;
+	handler(folder, nil);
+	[strongSelf cleanup];
+}
 
+- (void)restClient:(DBRestClient*)client createFolderFailedWithError:(NSError*)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	CreateFolderCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client deletedPath:(NSString *)path {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	DeletePathCallback handler = strongSelf.callback;
+	handler(nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client deletePathFailedWithError:(NSError*)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	DeletePathCallback handler = strongSelf.callback;
+	handler(error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client copiedPath:(NSString *)fromPath to:(DBMetadata *)to {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	CopyPathCallback handler = strongSelf.callback;
+	handler(to, nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client copyPathFailedWithError:(NSError*)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	CopyPathCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client createdCopyRef:(NSString *)copyRef {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	CreateCopyRefCallback handler = strongSelf.callback;
+	handler(copyRef, nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client createCopyRefFailedWithError:(NSError *)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	CreateCopyRefCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client copiedRef:(NSString *)copyRef to:(DBMetadata *)to {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	CopyFromRefCallback handler = strongSelf.callback;
+	handler(to, nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client copyFromRefFailedWithError:(NSError*)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	CopyFromRefCallback handler = strongSelf.callback;
+	handler(nil, error);
+
+}
+
+- (void)restClient:(DBRestClient*)client movedPath:(NSString *)from_path to:(DBMetadata *)result {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	MovePathCallback handler = strongSelf.callback;
+	handler(result, nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client movePathFailedWithError:(NSError*)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	MovePathCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client loadedAccountInfo:(DBAccountInfo*)info {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadAccountInfoCallback handler = strongSelf.callback;
+	handler(info, nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)client loadAccountInfoFailedWithError:(NSError*)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadAccountInfoCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)restClient loadedSearchResults:(NSArray*)results forPath:(NSString*)path keyword:(NSString*)keyword {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	SearchPathCallback handler = strongSelf.callback;
+	handler(results, nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)restClient searchFailedWithError:(NSError*)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	SearchPathCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)restClient loadedSharableLink:(NSString*)link forFile:(NSString*)path {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadSharableLinkCallback handler = strongSelf.callback;
+	handler(link, nil);
+	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient*)restClient loadSharableLinkFailedWithError:(NSError*)error {
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	LoadSharableLinkCallback handler = strongSelf.callback;
+	handler(nil, error);
+	[strongSelf cleanup];
+}
 
 @end

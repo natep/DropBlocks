@@ -20,6 +20,7 @@
 		9A6167211624FB0D00311E19 /* DropBlocks.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9A61671E1624FB0D00311E19 /* DropBlocks.podspec */; };
 		9A6167221624FB0D00311E19 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9A61671F1624FB0D00311E19 /* LICENSE */; };
 		9A6167231624FB0D00311E19 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9A6167201624FB0D00311E19 /* Podfile */; };
+		9AE76B04162E57950026CBDE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9AE76B03162E57950026CBDE /* README.md */; };
 		9CEFE3F31D1E49A2A5EAAEBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 286B19289CA845DDBF5A6D31 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		9A61671E1624FB0D00311E19 /* DropBlocks.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropBlocks.podspec; sourceTree = "<group>"; };
 		9A61671F1624FB0D00311E19 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9A6167201624FB0D00311E19 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9AE76B03162E57950026CBDE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D488E4E3973E435DAC4F8220 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 				9A61671E1624FB0D00311E19 /* DropBlocks.podspec */,
 				9A61671F1624FB0D00311E19 /* LICENSE */,
 				9A6167201624FB0D00311E19 /* Podfile */,
+				9AE76B03162E57950026CBDE /* README.md */,
 			);
 			name = "Text Files";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				9A6167211624FB0D00311E19 /* DropBlocks.podspec in Resources */,
 				9A6167221624FB0D00311E19 /* LICENSE in Resources */,
 				9A6167231624FB0D00311E19 /* Podfile in Resources */,
+				9AE76B04162E57950026CBDE /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

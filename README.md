@@ -58,9 +58,9 @@ And you're done. That will also cause the standard Dropbox SDK to be pulled into
 ***
 
 If you aren't using CocoaPods (Why not? What's your problem??) then you'll have to just grab the DropBlocks
-source and drop it into your project. You'll also have to manually integrate the standard Dropbox SDK into your
-project. Consult the [Dropbox SDK documentation](https://www.dropbox.com/developers/start/setup#ios)
-for more information about that.
+source and drop it into your project. You'll need <DropBlocks.m> and <DropBlocks.h>. You'll also have to manually
+integrate the standard Dropbox SDK into your project. Consult the
+[Dropbox SDK documentation](https://www.dropbox.com/developers/start/setup#ios) for more information about that.
 
 Setup
 -----
@@ -69,3 +69,9 @@ You'll need to do all the normal setup for Dropbox in your code (linking account
 You can find information on that in [Dropbox SDK documentation](https://www.dropbox.com/developers/start/authentication#ios).
 
 DropBlocks is meant to be a replacement for all the calls you would normally make to the DBRestClient class.
+
+Caveats
+-------
+
+DropBlocks version 0.0.1 is very much a beta release. Many of the methods have not been thoroughly tested.
+Use at your own risk, and please file a bug if you encounter any problems.

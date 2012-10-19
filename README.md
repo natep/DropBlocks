@@ -75,3 +75,11 @@ Caveats
 
 DropBlocks version 0.0.1 is very much a beta release. Many of the methods have not been thoroughly tested.
 Use at your own risk, and please file a bug if you encounter any problems.
+
+Contact
+-------
+
+If you end up using DropBlocks in a project, I'd love to hear about it.
+
+email: [nate@digitalrickshaw.com](mailto:nate@digitalrickshaw.com)  
+twitter: [@nate_petersen](https://twitter.com/nate_petersen)

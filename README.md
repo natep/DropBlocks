@@ -58,7 +58,7 @@ And you're done. That will also cause the standard Dropbox SDK to be pulled into
 ***
 
 If you aren't using CocoaPods (Why not? What's your problem??) then you'll have to just grab the DropBlocks
-source and drop it into your project. You'll need <DropBlocks.m> and <DropBlocks.h>. You'll also have to manually
+source and drop it into your project. You'll need *DropBlocks.m* and *DropBlocks.h*. You'll also have to manually
 integrate the standard Dropbox SDK into your project. Consult the
 [Dropbox SDK documentation](https://www.dropbox.com/developers/start/setup#ios) for more information about that.
 

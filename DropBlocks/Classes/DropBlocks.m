@@ -28,7 +28,7 @@ static NSMutableSet* activeWrappers = nil;
 		self.restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
 		self.restClient.delegate = self;
 	}
-	
+
 	return self;
 }
 
@@ -36,7 +36,7 @@ static NSMutableSet* activeWrappers = nil;
 	DropBlocks* db = [[DropBlocks alloc] init];
 	db.callback = callback;
 	[activeWrappers addObject:db];
-	
+
 	return db;
 }
 
@@ -44,7 +44,7 @@ static NSMutableSet* activeWrappers = nil;
 	for (DropBlocks* db in activeWrappers) {
 		[db.restClient cancelAllRequests];
 	}
-	
+
 	[activeWrappers removeAllObjects];
 }
 
@@ -246,7 +246,7 @@ static NSMutableSet* activeWrappers = nil;
 	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
 	DropBlocks* strongSelf = self;
 	LoadFileProgressCallback handler = strongSelf.secondaryCallback;
-	
+
 	if (handler) {
 		handler(progress);
 	}
@@ -281,7 +281,7 @@ static NSMutableSet* activeWrappers = nil;
 	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
 	DropBlocks* strongSelf = self;
 	UploadFileCallback handler = strongSelf.callback;
-	handler(metadata, nil);
+	handler(destPath, metadata, nil);
 	[strongSelf cleanup];
 }
 
@@ -290,7 +290,7 @@ static NSMutableSet* activeWrappers = nil;
 	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
 	DropBlocks* strongSelf = self;
 	UploadFileProgressCallback handler = strongSelf.secondaryCallback;
-	
+
 	if (handler) {
 		handler(progress);
 	}
@@ -300,7 +300,7 @@ static NSMutableSet* activeWrappers = nil;
 	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
 	DropBlocks* strongSelf = self;
 	UploadFileCallback handler = strongSelf.callback;
-	handler(nil, error);
+	handler(nil, nil, error);
 	[strongSelf cleanup];
 }
 
@@ -309,15 +309,15 @@ static NSMutableSet* activeWrappers = nil;
 	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
 	DropBlocks* strongSelf = self;
 	UploadFileChunkCallback handler = strongSelf.callback;
-	handler(offset, expiresDate, nil);
+	handler(uploadId, offset, expiresDate, nil);
 	[strongSelf cleanup];
 }
- 
+
 - (void)restClient:(DBRestClient *)client uploadFileChunkFailedWithError:(NSError *)error {
 	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
 	DropBlocks* strongSelf = self;
 	UploadFileChunkCallback handler = strongSelf.callback;
-	handler(0, nil, error);
+	handler(nil, 0, nil, error);
 	[strongSelf cleanup];
 }
 
@@ -326,15 +326,15 @@ static NSMutableSet* activeWrappers = nil;
 	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
 	DropBlocks* strongSelf = self;
 	UploadFileCallback handler = strongSelf.callback;
-	handler(metadata, nil);
+	handler(destPath, metadata, nil);
 	[strongSelf cleanup];
 }
- 
+
 - (void)restClient:(DBRestClient *)client uploadFromUploadIdFailedWithError:(NSError *)error {
 	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
 	DropBlocks* strongSelf = self;
 	UploadFileCallback handler = strongSelf.callback;
-	handler(nil, error);
+	handler(nil, nil, error);
 	[strongSelf cleanup];
 }
 

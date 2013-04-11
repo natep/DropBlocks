@@ -9,26 +9,26 @@
 #import <DropboxSDK/DropboxSDK.h>
 #import <DropboxSDK/DBDeltaEntry.h>
 
-typedef void (^LoadMetadataCallback)(DBMetadata*, NSError*);
-typedef void (^LoadDeltaCallback)(NSArray*, BOOL, NSString*, BOOL, NSError*);
-typedef void (^LoadStreamableURLCallback)(NSURL*, NSError*);
-typedef void (^LoadFileCallback)(NSString*, DBMetadata*, NSError*);
+typedef void (^LoadMetadataCallback)(DBMetadata *metadata, NSError *error);
+typedef void (^LoadDeltaCallback)(NSArray *entries, BOOL shouldReset, NSString *cursor, BOOL hasMore, NSError *error);
+typedef void (^LoadStreamableURLCallback)(NSURL *url, NSError *error);
+typedef void (^LoadFileCallback)(NSString *contentType, DBMetadata *metadata, NSError *error);
 typedef void (^LoadFileProgressCallback)(CGFloat);
-typedef void (^LoadThumbnailCallback)(DBMetadata*, NSError*);
-typedef void (^UploadFileCallback)(NSString*, DBMetadata*, NSError*);
-typedef void (^UploadFileProgressCallback)(CGFloat);
-typedef void (^UploadFileChunkCallback)(NSString*, unsigned long long, NSDate*, NSError*);
-typedef void (^LoadRevisionsCallback)(NSArray*, NSError*);
-typedef void (^RestoreFileCallback)(DBMetadata*, NSError*);
-typedef void (^CreateFolderCallback)(DBMetadata*, NSError*);
-typedef void (^DeletePathCallback)(NSError*);
-typedef void (^CopyPathCallback)(DBMetadata*, NSError*);
-typedef void (^CreateCopyRefCallback)(NSString*, NSError*);
-typedef void (^CopyFromRefCallback)(DBMetadata*, NSError*);
-typedef void (^MovePathCallback)(DBMetadata*, NSError*);
-typedef void (^LoadAccountInfoCallback)(DBAccountInfo*, NSError*);
-typedef void (^SearchPathCallback)(NSArray*, NSError*);
-typedef void (^LoadSharableLinkCallback)(NSString*, NSError*);
+typedef void (^LoadThumbnailCallback)(DBMetadata *metadata, NSError *error);
+typedef void (^UploadFileCallback)(NSString*, DBMetadata *metadata, NSError *error);
+typedef void (^UploadFileProgressCallback)(CGFloat progress);
+typedef void (^UploadFileChunkCallback)(NSString *uploadId, unsigned long long offset, NSDate *expiresDate, NSError *error);
+typedef void (^LoadRevisionsCallback)(NSArray *revisions, NSError *error);
+typedef void (^RestoreFileCallback)(DBMetadata *metadata, NSError *error);
+typedef void (^CreateFolderCallback)(DBMetadata *metadata, NSError *error);
+typedef void (^DeletePathCallback)(NSError *error);
+typedef void (^CopyPathCallback)(DBMetadata *metadata, NSError *error);
+typedef void (^CreateCopyRefCallback)(NSString *copyRef, NSError *error);
+typedef void (^CopyFromRefCallback)(DBMetadata *metadata, NSError *error);
+typedef void (^MovePathCallback)(DBMetadata *metadata, NSError *error);
+typedef void (^LoadAccountInfoCallback)(DBAccountInfo *metadata, NSError *error);
+typedef void (^SearchPathCallback)(NSArray *results, NSError *error);
+typedef void (^LoadSharableLinkCallback)(NSString *link, NSError *error);
 
 
 @interface DropBlocks : NSObject

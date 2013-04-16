@@ -51,7 +51,7 @@ CocoaPods is an awesomely simple dependency manager for Objective-C projects. Yo
 
 If you're using CocoaPods, all you have to do is put this line in your Podfile:
 
-	pod 'DropBlocks',	'0.0.1'
+	pod 'DropBlocks',	'0.0.2'
 
 And you're done. That will also cause the standard Dropbox SDK to be pulled into your project automatically.
 
@@ -73,8 +73,14 @@ DropBlocks is meant to be a replacement for all the calls you would normally mak
 Caveats
 -------
 
-DropBlocks version 0.0.1 is very much a beta release. Many of the methods have not been thoroughly tested.
+DropBlocks version 0.0.2 is still a beta release, though it is starting to see use in more productions apps.
+Some of the methods have not been thoroughly tested.
 Use at your own risk, and please file a bug if you encounter any problems.
+
+Additional Contributors
+-------
+
+John Blanco ([ZaBlanc](https://github.com/ZaBlanc)) - Fixed file uploading and improved the callback typedefs for better auto-completion.
 
 Contact
 -------

@@ -18,6 +18,7 @@ typedef void (^LoadThumbnailCallback)(DBMetadata *metadata, NSError *error);
 typedef void (^UploadFileCallback)(NSString*, DBMetadata *metadata, NSError *error);
 typedef void (^UploadFileProgressCallback)(CGFloat progress);
 typedef void (^UploadFileChunkCallback)(NSString *uploadId, unsigned long long offset, NSDate *expiresDate, NSError *error);
+typedef void (^UploadFileChunkProgressCallback)(CGFloat progress);
 typedef void (^LoadRevisionsCallback)(NSArray *revisions, NSError *error);
 typedef void (^RestoreFileCallback)(DBMetadata *metadata, NSError *error);
 typedef void (^CreateFolderCallback)(DBMetadata *metadata, NSError *error);
@@ -48,7 +49,7 @@ typedef void (^LoadSharableLinkCallback)(NSString *link, NSError *error);
 
 + (void)uploadFile:(NSString *)filename toPath:(NSString *)path withParentRev:(NSString *)parentRev fromPath:(NSString *)sourcePath completionBlock:(UploadFileCallback)completionBlock progressBlock:(UploadFileProgressCallback)progressBlock;
 
-+ (void)uploadFileChunk:(NSString *)uploadId offset:(unsigned long long)offset fromPath:(NSString *)localPath completionBlock:(UploadFileChunkCallback)completionBlock;
++ (void)uploadFileChunk:(NSString *)uploadId offset:(unsigned long long)offset fromPath:(NSString *)localPath completionBlock:(UploadFileChunkCallback)completionBlock progressBlock:(UploadFileChunkProgressCallback)progressBlock;
 
 + (void)uploadFile:(NSString *)filename toPath:(NSString *)parentFolder withParentRev:(NSString *)parentRev fromUploadId:(NSString *)uploadId completionBlock:(UploadFileCallback)completionBlock;
 

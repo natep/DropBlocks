@@ -109,8 +109,10 @@ static NSMutableSet* activeWrappers = nil;
 //- (void)uploadFile:(NSString*)filename toPath:(NSString*)path fromPath:(NSString *)sourcePath __attribute__((deprecated));
 
 
-+ (void)uploadFileChunk:(NSString *)uploadId offset:(unsigned long long)offset fromPath:(NSString *)localPath completionBlock:(UploadFileChunkCallback)completionBlock {
-	[[DropBlocks newInstanceWithCallback:completionBlock].restClient uploadFileChunk:uploadId offset:offset fromPath:localPath];
++ (void)uploadFileChunk:(NSString *)uploadId offset:(unsigned long long)offset fromPath:(NSString *)localPath completionBlock:(UploadFileChunkCallback)completionBlock progressBlock:(UploadFileChunkProgressCallback)progressBlock {
+    DropBlocks* db = [DropBlocks newInstanceWithCallback:completionBlock];
+	db.secondaryCallback = progressBlock;
+	[db.restClient uploadFileChunk:uploadId offset:offset fromPath:localPath];
 }
 
 + (void)uploadFile:(NSString *)filename toPath:(NSString *)parentFolder withParentRev:(NSString *)parentRev fromUploadId:(NSString *)uploadId completionBlock:(UploadFileCallback)completionBlock {
@@ -319,6 +321,15 @@ static NSMutableSet* activeWrappers = nil;
 	UploadFileChunkCallback handler = strongSelf.callback;
 	handler(nil, 0, nil, error);
 	[strongSelf cleanup];
+}
+
+- (void)restClient:(DBRestClient *)client uploadFileChunkProgress:(CGFloat)progress
+           forFile:(NSString *)uploadId offset:(unsigned long long)offset fromPath:(NSString *)localPath {
+    DropBlocks* strongSelf = self;
+	UploadFileChunkProgressCallback handler = strongSelf.callback;
+	handler(progress);
+	[strongSelf cleanup];
+    
 }
 
 - (void)restClient:(DBRestClient *)client uploadedFile:(NSString *)destPath fromUploadId:(NSString *)uploadId

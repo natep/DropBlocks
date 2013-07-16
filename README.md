@@ -80,7 +80,9 @@ Use at your own risk, and please file a bug if you encounter any problems.
 Additional Contributors
 -------
 
-John Blanco ([ZaBlanc](https://github.com/ZaBlanc)) - Fixed file uploading and improved the callback typedefs for better auto-completion.
+John Blanco ([ZaBlanc](https://github.com/ZaBlanc)) - Fixed file uploading and improved the callback typedefs for better auto-completion. ([#1](https://github.com/natep/DropBlocks/issues/1)).
+
+Ryan Tsao ([rtsao](https://github.com/rtsao)) - Fixed progress typedef. ([#3](https://github.com/natep/DropBlocks/issues/3))
 
 Contact
 -------

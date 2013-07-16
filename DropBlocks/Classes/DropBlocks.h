@@ -13,7 +13,7 @@ typedef void (^LoadMetadataCallback)(DBMetadata *metadata, NSError *error);
 typedef void (^LoadDeltaCallback)(NSArray *entries, BOOL shouldReset, NSString *cursor, BOOL hasMore, NSError *error);
 typedef void (^LoadStreamableURLCallback)(NSURL *url, NSError *error);
 typedef void (^LoadFileCallback)(NSString *contentType, DBMetadata *metadata, NSError *error);
-typedef void (^LoadFileProgressCallback)(CGFloat);
+typedef void (^LoadFileProgressCallback)(CGFloat progress);
 typedef void (^LoadThumbnailCallback)(DBMetadata *metadata, NSError *error);
 typedef void (^UploadFileCallback)(NSString*, DBMetadata *metadata, NSError *error);
 typedef void (^UploadFileProgressCallback)(CGFloat progress);

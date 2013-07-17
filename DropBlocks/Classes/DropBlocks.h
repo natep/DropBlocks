@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <DropboxSDK/DropboxSDK.h>
-#import <DropboxSDK/DBDeltaEntry.h>
+#import <Dropbox-iOS-SDK/DropboxSDK.h>
+#import <Dropbox-iOS-SDK/DBDeltaEntry.h>
 
 typedef void (^LoadMetadataCallback)(DBMetadata *metadata, NSError *error);
 typedef void (^LoadDeltaCallback)(NSArray *entries, BOOL shouldReset, NSString *cursor, BOOL hasMore, NSError *error);

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DropBlocks.h"
 
 @implementation AppDelegate
 

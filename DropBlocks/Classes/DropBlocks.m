@@ -325,10 +325,13 @@ static NSMutableSet* activeWrappers = nil;
 
 - (void)restClient:(DBRestClient *)client uploadFileChunkProgress:(CGFloat)progress
            forFile:(NSString *)uploadId offset:(unsigned long long)offset fromPath:(NSString *)localPath {
-    DropBlocks* strongSelf = self;
-	UploadFileChunkProgressCallback handler = strongSelf.callback;
-	handler(progress);
-	[strongSelf cleanup];
+	//we can run into dealloc problems unless we keep a strong reference to ourselves till the method is done
+	DropBlocks* strongSelf = self;
+	UploadFileProgressCallback handler = strongSelf.secondaryCallback;
+    
+	if (handler) {
+		handler(progress);
+	}
     
 }
 

@@ -108,6 +108,9 @@ static NSMutableSet* activeWrappers = nil;
 // compatibility reasons only */
 //- (void)uploadFile:(NSString*)filename toPath:(NSString*)path fromPath:(NSString *)sourcePath __attribute__((deprecated));
 
++ (void)uploadFileChunk:(NSString *)uploadId offset:(unsigned long long)offset fromPath:(NSString *)localPath completionBlock:(UploadFileChunkCallback)completionBlock {
+	[self uploadFileChunk:uploadId offset:offset fromPath:localPath completionBlock:completionBlock progressBlock:nil];
+}
 
 + (void)uploadFileChunk:(NSString *)uploadId offset:(unsigned long long)offset fromPath:(NSString *)localPath completionBlock:(UploadFileChunkCallback)completionBlock progressBlock:(UploadFileChunkProgressCallback)progressBlock {
     DropBlocks* db = [DropBlocks newInstanceWithCallback:completionBlock];

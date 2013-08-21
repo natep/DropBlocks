@@ -82,7 +82,9 @@ Additional Contributors
 
 John Blanco ([ZaBlanc](https://github.com/ZaBlanc)) - Fixed file uploading and improved the callback typedefs for better auto-completion. ([#1](https://github.com/natep/DropBlocks/issues/1)).
 
-Ryan Tsao ([rtsao](https://github.com/rtsao)) - Fixed progress typedef. ([#3](https://github.com/natep/DropBlocks/issues/3))
+Ryan Tsao ([rtsao](https://github.com/rtsao))
+	- Fixed progress typedef. ([#3](https://github.com/natep/DropBlocks/issues/3))
+	- Added progress block to uploadFileChunk. ([#6](https://github.com/natep/DropBlocks/issues/6))
 
 Contact
 -------

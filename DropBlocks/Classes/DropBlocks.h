@@ -15,7 +15,7 @@ typedef void (^LoadStreamableURLCallback)(NSURL *url, NSError *error);
 typedef void (^LoadFileCallback)(NSString *contentType, DBMetadata *metadata, NSError *error);
 typedef void (^LoadFileProgressCallback)(CGFloat progress);
 typedef void (^LoadThumbnailCallback)(DBMetadata *metadata, NSError *error);
-typedef void (^UploadFileCallback)(NSString*, DBMetadata *metadata, NSError *error);
+typedef void (^UploadFileCallback)(NSString *destDir, DBMetadata *metadata, NSError *error);
 typedef void (^UploadFileProgressCallback)(CGFloat progress);
 typedef void (^UploadFileChunkCallback)(NSString *uploadId, unsigned long long offset, NSDate *expiresDate, NSError *error);
 typedef void (^UploadFileChunkProgressCallback)(CGFloat progress);

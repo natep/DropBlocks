@@ -10,9 +10,14 @@
 #ifdef COCOAPODS
 	#import <Dropbox-iOS-SDK/DropboxSDK.h>
 	#import <Dropbox-iOS-SDK/DBDeltaEntry.h>
+#else 
+#ifdef DROPBOXSOURCE
+    #import "DropboxSDK.h"
+    #import "DBDeltaEntry.h"
 #else
 	#import <DropboxSDK/DropboxSDK.h>
 	#import <DropboxSDK/DBDeltaEntry.h>
+#endif
 #endif
 
 typedef void (^LoadMetadataCallback)(DBMetadata *metadata, NSError *error);

@@ -40,6 +40,8 @@ typedef void (^LoadSharableLinkCallback)(NSString *link, NSError *error);
 
 @interface DropBlocks : NSObject
 
++ (void)setUserID:(NSString *)userID;
+
 + (void)cancelAllRequests;
 
 + (void)loadMetadata:(NSString*)path completionBlock:(LoadMetadataCallback)completionBlock;

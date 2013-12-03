@@ -8,6 +8,7 @@
 #import "DropBlocks.h"
 
 static NSMutableSet* activeWrappers = nil;
+static NSString * _userID = nil;
 
 @interface DropBlocks () <DBRestClientDelegate>
 
@@ -25,11 +26,19 @@ static NSMutableSet* activeWrappers = nil;
 
 - (id)init {
 	if ((self = [super init])) {
-		self.restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
+        if(_userID == nil)
+            self.restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
+        else
+            self.restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession] userId:_userID];
 		self.restClient.delegate = self;
 	}
 
 	return self;
+}
+
++ (void)setUserID:(NSString *)userID
+{
+    _userID = userID;
 }
 
 + (DropBlocks*)newInstanceWithCallback:(id)callback {

@@ -1,1823 +1,374 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>00BC6C3F6B0C4FC8A948C30E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBBase64Transcoder.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBBase64Transcoder.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>0483E8EAFFB14811BE6ED7EC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthParameterFactory.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthParameterFactory.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>05A9C4C3B4294FC0BA8E9FCC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2BCE943AD5424850A1BF0DF6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06C780BC31C541708B0A1063</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E0A18E11F76E446A825A5163</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0902AEB4292C424FAD0C35D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>0978D3135FFE4BC880084373</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DE459EEE45DC4594B358F7F6</string>
-				<string>697B3AC6E58647F09268CF12</string>
-				<string>2E304AEEEF9E4EA0A79AD32D</string>
-				<string>D4E4D1CD1BAD4326B61CE6FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0C69AB88C00D47C0AD11E299</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3B6ABB0A85E46EE90AA54F2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0D4DB5F0C48D4E5DB9CC3194</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8E4174E337E541CFB23EAC08</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>11E6FBB2EB2048D3A92C1480</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthSignatureParameter.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthSignatureParameter.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>14F89B3F2433495F953A0501</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5BA80FC5E08A4600A4C99F3A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>172757BA25E742AD8B1B0993</key>
-		<dict>
-			<key>fileRef</key>
-			<string>917094643FCA453E9972B403</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>174CC76824584348A53808FC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>97B3C2EE64CC407DBFA0CD71</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1FF4E794036B48EE8481196D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8BF279D7C34A43CE9897AC8E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>209D785BFC9148FD837A7279</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBJsonWriter.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBJsonWriter.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>211976CDBFB1422EB2D42A73</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2FD823BD866948AA803BC69A</string>
-				<string>6694DF57DB754D4A870C99EF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>260B2A3E12E6439986C8BB46</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>FE647137D9FA4C50BA3487EE</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>44C7FF25871744B0862E8A0B</string>
-			<key>remoteInfo</key>
-			<string>Pods-Dropbox-iOS-SDK</string>
-		</dict>
-		<key>27295099321C4BABBCC52726</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>44C7FF25871744B0862E8A0B</string>
-			<key>targetProxy</key>
-			<string>260B2A3E12E6439986C8BB46</string>
-		</dict>
-		<key>294803E6FCD04BAF84206FE4</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E21271ECB92D404E85EC5FCF</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Pods-Dropbox-iOS-SDK-prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>4.3</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2A3D8C41F3474049AEE05CB3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F41D5FF103804BFB80639E55</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2BCE943AD5424850A1BF0DF6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBQuota.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBQuota.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2C10DD2AEE2440BCABA74D84</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2C82ADD2ACE94FDDA033186E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>69621BD79D7244CBB5E9BFFC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2C91DE88B558441895817A16</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthCredentialConcreteStore+KeychainAdditions.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthCredentialConcreteStore+KeychainAdditions.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2D29AB11FFE64E42AE0C0DB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32E65524560D45759CFE3383</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2E304AEEEF9E4EA0A79AD32D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>2EC57E4EE12E44F0ACFD3CD8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DropboxSDK.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DropboxSDK.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2FCDA062D32549FB82223824</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CD62632DFCAB492986EED35A</string>
-				<string>39D3AE8FFEAA44A89A2303ED</string>
-				<string>0C69AB88C00D47C0AD11E299</string>
-				<string>4F9F64338CF84DCAA86E8982</string>
-				<string>FEF1B779DEED4B43A99CC4BA</string>
-				<string>6C105ABE49F84F2CAF0F0A39</string>
-				<string>172757BA25E742AD8B1B0993</string>
-				<string>97455C9DBF6641268F560F9F</string>
-				<string>8CE844C8759F49E8B36DFB29</string>
-				<string>14F89B3F2433495F953A0501</string>
-				<string>6DE488A6C93D43D8AB5C2706</string>
-				<string>05A9C4C3B4294FC0BA8E9FCC</string>
-				<string>2A3D8C41F3474049AEE05CB3</string>
-				<string>558FF325FB9F43DAB7455E34</string>
-				<string>06C780BC31C541708B0A1063</string>
-				<string>0D4DB5F0C48D4E5DB9CC3194</string>
-				<string>9C327F8AB13A45E194E305B7</string>
-				<string>3B7B740314294B62BBFF85FF</string>
-				<string>BB6BFA4E23784C1D9D94FE37</string>
-				<string>2C82ADD2ACE94FDDA033186E</string>
-				<string>C3423C4760714F88B5E635F3</string>
-				<string>2D29AB11FFE64E42AE0C0DB0</string>
-				<string>960925AF4FC64F2E806527EF</string>
-				<string>B3175D253F924652A7FE82C2</string>
-				<string>A8C984F8445447729BC27569</string>
-				<string>8B1DD4AA51C84F12964A2BF7</string>
-				<string>4730A6C6066545458501EB12</string>
-				<string>BAD30A6221304CE0BF728076</string>
-				<string>FDDD244A7502410681325CDA</string>
-				<string>74B4CE23F4BC475B930437F6</string>
-				<string>BF20316873DA47B896719928</string>
-				<string>F99B23CCD03A4BECAD229FA8</string>
-				<string>B08D363DBD3E40C0BCC22666</string>
-				<string>89A54F70AEFC4B98A8EE10C0</string>
-				<string>8FD73D4BD08D4F72BD1DE64B</string>
-				<string>4A060CDC97004CC9B86B0F10</string>
-				<string>CC0879AF08254932B1C2C2E3</string>
-				<string>70241A66FC9248CEAAC0E4CB</string>
-				<string>EF343E55AE5A45D1AF366E37</string>
-				<string>8CDA8593239A4757AEBC09A4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2FD823BD866948AA803BC69A</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>4.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>32043FF5474843A7AB10A3F7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthAuthenticationMethodOAuth.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthAuthenticationMethodOAuth.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>32E65524560D45759CFE3383</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthAPIRequestLoader.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthAPIRequestLoader.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>34F87E18BC1A4E9D8579C698</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBJsonParser.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBJsonParser.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>3940BDA5BA304361A2B46444</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A212276295484F14980C37F3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A525E9032F7E4221B2103404</string>
-				<string>978F30543C0649E694986BF3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>27295099321C4BABBCC52726</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>F9B59C3F010B42C1B83D6B40</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>39D3AE8FFEAA44A89A2303ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00BC6C3F6B0C4FC8A948C30E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B7B740314294B62BBFF85FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EA518E79EC1D41E79AE2D032</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>44C7FF25871744B0862E8A0B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FE9CA1A934CF45609B88905E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9BBCB01245A94E9B8DAE3999</string>
-				<string>174CC76824584348A53808FC</string>
-				<string>2FCDA062D32549FB82223824</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Dropbox-iOS-SDK</string>
-			<key>productName</key>
-			<string>Pods-Dropbox-iOS-SDK</string>
-			<key>productReference</key>
-			<string>C0AD54526F8A463DB1A5C6CE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>4730A6C6066545458501EB12</key>
-		<dict>
-			<key>fileRef</key>
-			<string>677081A798494639A8F39254</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>48D40BB225B040928FBC154E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>697B3AC6E58647F09268CF12</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4A060CDC97004CC9B86B0F10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D3EF75099C0D4509A0731349</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4F9F64338CF84DCAA86E8982</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BEAB712713584198B39FBBCD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>502479A2D0AC4A5B84D5DBEB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthAuthenticationMethod.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthAuthenticationMethod.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>54E243DC5D9A4A40810B64A2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5761018F5AB641D68707B653</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>4.3</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>558FF325FB9F43DAB7455E34</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AFC08A6918B44743B08747FC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5761018F5AB641D68707B653</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>58D29B4BF1C74D09B956D532</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPURLRequestParameter.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPURLRequestParameter.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5BA80FC5E08A4600A4C99F3A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBLog.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBLog.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5FFB8980F9AA46CE99FE3C90</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBJSON.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBJSON.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>6694DF57DB754D4A870C99EF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>4.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>675F84B4225F4811958E560A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>92ABE64AD81F44688664785B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>677081A798494639A8F39254</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthCredentialConcreteStore.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthCredentialConcreteStore.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>69621BD79D7244CBB5E9BFFC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuth.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuth.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>697B3AC6E58647F09268CF12</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>6C105ABE49F84F2CAF0F0A39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5FFB8980F9AA46CE99FE3C90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6CD2976A3CB3429AB9B62CDA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSObject+DBJSON.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/NSObject+DBJSON.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>6DAB00781AB9445ABF51EDB1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthConnection.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthConnection.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>6DE488A6C93D43D8AB5C2706</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DBCAD021650841DA88975CF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E1BEE4DC6F44C8886B1ABE4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPDebug.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPDebug.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>70241A66FC9248CEAAC0E4CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AA67A2C449B4415CBCE39742</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>74B4CE23F4BC475B930437F6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>11E6FBB2EB2048D3A92C1480</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>83FA12B151C641F3A26E2EF5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D7A1D72F9586493FAE300F14</string>
-				<string>D8562E5655BB4418BD618088</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>858FC3754E9D4CA9BF447077</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8591EACF6DEA41F18550D5AE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSString+Dropbox.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/NSString+Dropbox.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>89A54F70AEFC4B98A8EE10C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9FB30712B0C14084A9582475</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8B1DD4AA51C84F12964A2BF7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2C91DE88B558441895817A16</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8BF279D7C34A43CE9897AC8E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Dropbox-iOS-SDK-dummy.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8C890D46A1CD4BFE88CB8DC0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Dropbox-iOS-SDK-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8CDA8593239A4757AEBC09A4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E9B94FE83D074E8386797146</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8CE844C8759F49E8B36DFB29</key>
-		<dict>
-			<key>fileRef</key>
-			<string>209D785BFC9148FD837A7279</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8E4174E337E541CFB23EAC08</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBSession.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBSession.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8E6592E0E5894CCE9349C15D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Dropbox-iOS-SDK.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8FD73D4BD08D4F72BD1DE64B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6CD2976A3CB3429AB9B62CDA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>917094643FCA453E9972B403</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBJsonBase.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBJsonBase.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>92ABE64AD81F44688664785B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E9A341F0976740EDACA615D4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Dropbox-iOS-SDK</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93212D7303A546C19F2A6316</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>960925AF4FC64F2E806527EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>502479A2D0AC4A5B84D5DBEB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>97455C9DBF6641268F560F9F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>34F87E18BC1A4E9D8579C698</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>978F30543C0649E694986BF3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>48D40BB225B040928FBC154E</string>
-				<string>F0EE48F1F1C742719B7CCD98</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>97B3C2EE64CC407DBFA0CD71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>697B3AC6E58647F09268CF12</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9BBCB01245A94E9B8DAE3999</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1FF4E794036B48EE8481196D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9C327F8AB13A45E194E305B7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2EC57E4EE12E44F0ACFD3CD8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9FB30712B0C14084A9582475</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSDictionary+Dropbox.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/NSDictionary+Dropbox.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A212276295484F14980C37F3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>54E243DC5D9A4A40810B64A2</string>
-				<string>C9B16780DCCE4AE1A481367D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A525E9032F7E4221B2103404</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F2AE6F15CBEF4E5496C73672</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A8C984F8445447729BC27569</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6DAB00781AB9445ABF51EDB1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AA67A2C449B4415CBCE39742</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSString+URLEscapingAdditions.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/NSString+URLEscapingAdditions.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AB65E7F359054A158C1E1E13</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSURL+MPURLParameterAdditions.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/NSURL+MPURLParameterAdditions.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AB83231F76394DF38F41B631</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBError.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBError.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AFC08A6918B44743B08747FC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBRestClient.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBRestClient.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B08D363DBD3E40C0BCC22666</key>
-		<dict>
-			<key>fileRef</key>
-			<string>58D29B4BF1C74D09B956D532</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B20B44D71AA8435F8DB6AA55</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E21271ECB92D404E85EC5FCF</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Pods-Dropbox-iOS-SDK-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>4.3</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B3175D253F924652A7FE82C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32043FF5474843A7AB10A3F7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4838B155BBC4C64911A31D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthURLResponse.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthURLResponse.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BAB872B4F4714B91A82CD6BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-environment.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BAD30A6221304CE0BF728076</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4FBEF819E9B4BC6BCFE937B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB6BFA4E23784C1D9D94FE37</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E1BEE4DC6F44C8886B1ABE4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BC12B88892E340CD98682F3F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBAccountInfo.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBAccountInfo.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BD09BF315EE74C95AF8768B1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthAPI.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthAPI.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BDAF75AB841F4666AB21F2F4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0978D3135FFE4BC880084373</string>
-				<string>675F84B4225F4811958E560A</string>
-				<string>DB2BBCAD84714A848913A7E7</string>
-				<string>83FA12B151C641F3A26E2EF5</string>
-				<string>FCE8F0BD7A3940BD84228388</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BEAB712713584198B39FBBCD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBDeltaEntry.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBDeltaEntry.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BF20316873DA47B896719928</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D405D5ACFE154E42A9222487</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C0AD54526F8A463DB1A5C6CE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Dropbox-iOS-SDK.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C3423C4760714F88B5E635F3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BD09BF315EE74C95AF8768B1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3B6ABB0A85E46EE90AA54F2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBDefines.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBDefines.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C9B16780DCCE4AE1A481367D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5761018F5AB641D68707B653</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>4.3</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CC0879AF08254932B1C2C2E3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8591EACF6DEA41F18550D5AE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CD62632DFCAB492986EED35A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BC12B88892E340CD98682F3F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D3EF75099C0D4509A0731349</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSString+DBJSON.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/NSString+DBJSON.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D405D5ACFE154E42A9222487</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthURLRequest.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthURLRequest.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D4E4D1CD1BAD4326B61CE6FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Security.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D4FBEF819E9B4BC6BCFE937B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPOAuthCredentialStore.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/MPOAuthCredentialStore.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D7A1D72F9586493FAE300F14</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8E6592E0E5894CCE9349C15D</string>
-				<string>E21271ECB92D404E85EC5FCF</string>
-				<string>8C890D46A1CD4BFE88CB8DC0</string>
-				<string>8BF279D7C34A43CE9897AC8E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Dropbox-iOS-SDK</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D8562E5655BB4418BD618088</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5761018F5AB641D68707B653</string>
-				<string>BAB872B4F4714B91A82CD6BB</string>
-				<string>0902AEB4292C424FAD0C35D4</string>
-				<string>93212D7303A546C19F2A6316</string>
-				<string>858FC3754E9D4CA9BF447077</string>
-				<string>2C10DD2AEE2440BCABA74D84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB2BBCAD84714A848913A7E7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C0AD54526F8A463DB1A5C6CE</string>
-				<string>F9B59C3F010B42C1B83D6B40</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBCAD021650841DA88975CF5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBMetadata.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBMetadata.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>DE459EEE45DC4594B358F7F6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>DropboxSDK.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/DropboxSDK.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>E0A18E11F76E446A825A5163</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBSession+iOS.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBSession+iOS.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E21271ECB92D404E85EC5FCF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Dropbox-iOS-SDK-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E9A341F0976740EDACA615D4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BC12B88892E340CD98682F3F</string>
-				<string>00BC6C3F6B0C4FC8A948C30E</string>
-				<string>C3B6ABB0A85E46EE90AA54F2</string>
-				<string>BEAB712713584198B39FBBCD</string>
-				<string>AB83231F76394DF38F41B631</string>
-				<string>5FFB8980F9AA46CE99FE3C90</string>
-				<string>917094643FCA453E9972B403</string>
-				<string>34F87E18BC1A4E9D8579C698</string>
-				<string>209D785BFC9148FD837A7279</string>
-				<string>5BA80FC5E08A4600A4C99F3A</string>
-				<string>DBCAD021650841DA88975CF5</string>
-				<string>2BCE943AD5424850A1BF0DF6</string>
-				<string>F41D5FF103804BFB80639E55</string>
-				<string>AFC08A6918B44743B08747FC</string>
-				<string>E0A18E11F76E446A825A5163</string>
-				<string>8E4174E337E541CFB23EAC08</string>
-				<string>2EC57E4EE12E44F0ACFD3CD8</string>
-				<string>EA518E79EC1D41E79AE2D032</string>
-				<string>6E1BEE4DC6F44C8886B1ABE4</string>
-				<string>69621BD79D7244CBB5E9BFFC</string>
-				<string>BD09BF315EE74C95AF8768B1</string>
-				<string>32E65524560D45759CFE3383</string>
-				<string>502479A2D0AC4A5B84D5DBEB</string>
-				<string>32043FF5474843A7AB10A3F7</string>
-				<string>6DAB00781AB9445ABF51EDB1</string>
-				<string>2C91DE88B558441895817A16</string>
-				<string>677081A798494639A8F39254</string>
-				<string>D4FBEF819E9B4BC6BCFE937B</string>
-				<string>0483E8EAFFB14811BE6ED7EC</string>
-				<string>11E6FBB2EB2048D3A92C1480</string>
-				<string>D405D5ACFE154E42A9222487</string>
-				<string>B4838B155BBC4C64911A31D4</string>
-				<string>58D29B4BF1C74D09B956D532</string>
-				<string>9FB30712B0C14084A9582475</string>
-				<string>6CD2976A3CB3429AB9B62CDA</string>
-				<string>D3EF75099C0D4509A0731349</string>
-				<string>8591EACF6DEA41F18550D5AE</string>
-				<string>AA67A2C449B4415CBCE39742</string>
-				<string>AB65E7F359054A158C1E1E13</string>
-				<string>E9B94FE83D074E8386797146</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Source Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E9B94FE83D074E8386797146</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSURLResponse+Encoding.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/NSURLResponse+Encoding.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>EA518E79EC1D41E79AE2D032</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSON.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/JSON.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>EF343E55AE5A45D1AF366E37</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB65E7F359054A158C1E1E13</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F0EE48F1F1C742719B7CCD98</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C0AD54526F8A463DB1A5C6CE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F2AE6F15CBEF4E5496C73672</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2C10DD2AEE2440BCABA74D84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F41D5FF103804BFB80639E55</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DBRequest.h</string>
-			<key>path</key>
-			<string>Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.5/DropboxSDK.framework/Headers/DBRequest.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F99B23CCD03A4BECAD229FA8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4838B155BBC4C64911A31D4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F9B59C3F010B42C1B83D6B40</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FCE8F0BD7A3940BD84228388</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>FDDD244A7502410681325CDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0483E8EAFFB14811BE6ED7EC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE647137D9FA4C50BA3487EE</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0450</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>211976CDBFB1422EB2D42A73</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>BDAF75AB841F4666AB21F2F4</string>
-			<key>productRefGroup</key>
-			<string>DB2BBCAD84714A848913A7E7</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>44C7FF25871744B0862E8A0B</string>
-				<string>3940BDA5BA304361A2B46444</string>
-			</array>
-		</dict>
-		<key>FE9CA1A934CF45609B88905E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>294803E6FCD04BAF84206FE4</string>
-				<string>B20B44D71AA8435F8DB6AA55</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FEF1B779DEED4B43A99CC4BA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB83231F76394DF38F41B631</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>FE647137D9FA4C50BA3487EE</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19EE21561281E5F5C0B5A85CFDC1A411 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636BC752E7946EF6919A00D1F8EAE693 /* Foundation.framework */; };
+		B991A49F4C12A4F8462C02B69D83DB11 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F544E664EA23C82471AAB47D479D781B /* Pods-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091AB1D7303D7D691678153BC692E59 /* DBJsonBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBJsonBase.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBJsonBase.h"; sourceTree = "<group>"; };
+		039B5D6B0F0C209CA1433634F21E3CD1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		0774E1F82B19D38F5E33F849621F4388 /* NSObject+DBJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+DBJSON.h"; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/NSObject+DBJSON.h"; sourceTree = "<group>"; };
+		0CA186229449F9C2B31753B05B439D08 /* MPURLRequestParameter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPURLRequestParameter.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPURLRequestParameter.h"; sourceTree = "<group>"; };
+		0D17E411663350B3FB6C0EFD0FF674D5 /* DBJsonParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBJsonParser.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBJsonParser.h"; sourceTree = "<group>"; };
+		0F89F06D53FD2E86ED0B881EE92FA740 /* DBLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBLog.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBLog.h"; sourceTree = "<group>"; };
+		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		25874A10CB2CF04DB338E52FB2CBA276 /* DBDeltaEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBDeltaEntry.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBDeltaEntry.h"; sourceTree = "<group>"; };
+		2911C90045EF579F81BD9E92797F5CF3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		2A7623457C67508028B5E7276F93E911 /* MPOAuthCredentialConcreteStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthCredentialConcreteStore.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthCredentialConcreteStore.h"; sourceTree = "<group>"; };
+		3D164DB84AEB49109007DB9373D28392 /* DBAccountInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBAccountInfo.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBAccountInfo.h"; sourceTree = "<group>"; };
+		46F45A66B1F14D33ABD42751F15BFCD9 /* MPOAuthAPIRequestLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthAPIRequestLoader.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthAPIRequestLoader.h"; sourceTree = "<group>"; };
+		4F4FE88EBCD01B15DA865AA31ECF25B7 /* MPDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPDebug.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPDebug.h"; sourceTree = "<group>"; };
+		55CC077BEA36ECEF097AE436BEC1D954 /* NSURL+MPURLParameterAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+MPURLParameterAdditions.h"; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/NSURL+MPURLParameterAdditions.h"; sourceTree = "<group>"; };
+		5BDD140C632E59CF7447B3E556F5DDD2 /* NSString+URLEscapingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEscapingAdditions.h"; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/NSString+URLEscapingAdditions.h"; sourceTree = "<group>"; };
+		636BC752E7946EF6919A00D1F8EAE693 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		652C8265C3CCB407B89E125A60FD6E14 /* MPOAuthSignatureParameter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthSignatureParameter.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthSignatureParameter.h"; sourceTree = "<group>"; };
+		6C4F06EA9F7B57593F6FEAC7ADC75AA7 /* MPOAuthCredentialConcreteStore+KeychainAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MPOAuthCredentialConcreteStore+KeychainAdditions.h"; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthCredentialConcreteStore+KeychainAdditions.h"; sourceTree = "<group>"; };
+		6F153A02E777E99BD1BBA451D4E1B416 /* DBJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBJSON.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBJSON.h"; sourceTree = "<group>"; };
+		76E553CCE4EF8DE31176B9E49CF92B92 /* DBRestClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBRestClient.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBRestClient.h"; sourceTree = "<group>"; };
+		7D6221570BDA35F4E747AFD3BF436EE3 /* DBBase64Transcoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBBase64Transcoder.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBBase64Transcoder.h"; sourceTree = "<group>"; };
+		80F51A1BD35C9AA8D1FD43A3F2A8D851 /* MPOAuthParameterFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthParameterFactory.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthParameterFactory.h"; sourceTree = "<group>"; };
+		867014394ED056F250B5C0B91A8D4200 /* NSString+DBJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+DBJSON.h"; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/NSString+DBJSON.h"; sourceTree = "<group>"; };
+		A141BA1B728BDF8CADB5491B6ABB1679 /* MPOAuthURLRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthURLRequest.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthURLRequest.h"; sourceTree = "<group>"; };
+		AEEDA5F6291892906F3CBBF39B8BC98F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26B9CB27EF060A56C3282874257B3F2 /* DBRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBRequest.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBRequest.h"; sourceTree = "<group>"; };
+		B54B58E771B09694455FAD1D5507350B /* MPOAuthCredentialStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthCredentialStore.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthCredentialStore.h"; sourceTree = "<group>"; };
+		B67BAF198AA1E3DA9FAE1E96DA7EDFB6 /* MPOAuthConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthConnection.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthConnection.h"; sourceTree = "<group>"; };
+		B7EED869177024C9BE3CC256F14544E1 /* DBSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBSession.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBSession.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE77C41B12F52E886E539FC8EA16F123 /* DBQuota.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBQuota.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBQuota.h"; sourceTree = "<group>"; };
+		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		C3FBB695A02BA6D57F0B00F456C2F1F5 /* DropboxSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DropboxSDK.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DropboxSDK.h"; sourceTree = "<group>"; };
+		CDB54B75E3FE110A2CE44C663F26E0CC /* DBError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBError.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBError.h"; sourceTree = "<group>"; };
+		CE6962B16B0E2DFF981E9870093C241C /* DBMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBMetadata.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBMetadata.h"; sourceTree = "<group>"; };
+		D2CF246FD266A6615D9F6FDD7EF2B648 /* NSDictionary+Dropbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Dropbox.h"; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/NSDictionary+Dropbox.h"; sourceTree = "<group>"; };
+		D3878093F1300FD0479FD7F3658E3831 /* NSString+Dropbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Dropbox.h"; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/NSString+Dropbox.h"; sourceTree = "<group>"; };
+		D512690B97A967FD7023DA1385FDC790 /* JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/JSON.h"; sourceTree = "<group>"; };
+		D7DAA0F3401C8A43EFA244DAA7148FFE /* MPOAuthAuthenticationMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthAuthenticationMethod.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthAuthenticationMethod.h"; sourceTree = "<group>"; };
+		E0A2E7AD971CD321A423355A144767FC /* DBJsonWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBJsonWriter.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBJsonWriter.h"; sourceTree = "<group>"; };
+		E6E0EB6119D45D15B227D96A8E1CC08E /* MPOAuthAuthenticationMethodOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthAuthenticationMethodOAuth.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthAuthenticationMethodOAuth.h"; sourceTree = "<group>"; };
+		EDC6491860B91B15DC4676B3BB6B02B5 /* MPOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuth.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuth.h"; sourceTree = "<group>"; };
+		F17E8EE112CED687F8846B4F29583329 /* NSURLResponse+Encoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLResponse+Encoding.h"; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/NSURLResponse+Encoding.h"; sourceTree = "<group>"; };
+		F3FD17207CD418FD875C4036EBF43D3B /* MPOAuthURLResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthURLResponse.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthURLResponse.h"; sourceTree = "<group>"; };
+		F544E664EA23C82471AAB47D479D781B /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		F58C8B0F57FB82C815BCBA0FA99B76B1 /* DBSession+iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DBSession+iOS.h"; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/DBSession+iOS.h"; sourceTree = "<group>"; };
+		F9AF45C0538DFC3BA2FF0A2F36599D21 /* MPOAuthAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPOAuthAPI.h; path = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework/Headers/MPOAuthAPI.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E78C4AC537A1782BCFD134B2B8940E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EE21561281E5F5C0B5A85CFDC1A411 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		107F4F336E5C898276DB80E2172D58F1 /* Dropbox-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				3D164DB84AEB49109007DB9373D28392 /* DBAccountInfo.h */,
+				7D6221570BDA35F4E747AFD3BF436EE3 /* DBBase64Transcoder.h */,
+				25874A10CB2CF04DB338E52FB2CBA276 /* DBDeltaEntry.h */,
+				CDB54B75E3FE110A2CE44C663F26E0CC /* DBError.h */,
+				6F153A02E777E99BD1BBA451D4E1B416 /* DBJSON.h */,
+				0091AB1D7303D7D691678153BC692E59 /* DBJsonBase.h */,
+				0D17E411663350B3FB6C0EFD0FF674D5 /* DBJsonParser.h */,
+				E0A2E7AD971CD321A423355A144767FC /* DBJsonWriter.h */,
+				0F89F06D53FD2E86ED0B881EE92FA740 /* DBLog.h */,
+				CE6962B16B0E2DFF981E9870093C241C /* DBMetadata.h */,
+				BE77C41B12F52E886E539FC8EA16F123 /* DBQuota.h */,
+				B26B9CB27EF060A56C3282874257B3F2 /* DBRequest.h */,
+				76E553CCE4EF8DE31176B9E49CF92B92 /* DBRestClient.h */,
+				B7EED869177024C9BE3CC256F14544E1 /* DBSession.h */,
+				F58C8B0F57FB82C815BCBA0FA99B76B1 /* DBSession+iOS.h */,
+				C3FBB695A02BA6D57F0B00F456C2F1F5 /* DropboxSDK.h */,
+				D512690B97A967FD7023DA1385FDC790 /* JSON.h */,
+				4F4FE88EBCD01B15DA865AA31ECF25B7 /* MPDebug.h */,
+				EDC6491860B91B15DC4676B3BB6B02B5 /* MPOAuth.h */,
+				F9AF45C0538DFC3BA2FF0A2F36599D21 /* MPOAuthAPI.h */,
+				46F45A66B1F14D33ABD42751F15BFCD9 /* MPOAuthAPIRequestLoader.h */,
+				D7DAA0F3401C8A43EFA244DAA7148FFE /* MPOAuthAuthenticationMethod.h */,
+				E6E0EB6119D45D15B227D96A8E1CC08E /* MPOAuthAuthenticationMethodOAuth.h */,
+				B67BAF198AA1E3DA9FAE1E96DA7EDFB6 /* MPOAuthConnection.h */,
+				2A7623457C67508028B5E7276F93E911 /* MPOAuthCredentialConcreteStore.h */,
+				6C4F06EA9F7B57593F6FEAC7ADC75AA7 /* MPOAuthCredentialConcreteStore+KeychainAdditions.h */,
+				B54B58E771B09694455FAD1D5507350B /* MPOAuthCredentialStore.h */,
+				80F51A1BD35C9AA8D1FD43A3F2A8D851 /* MPOAuthParameterFactory.h */,
+				652C8265C3CCB407B89E125A60FD6E14 /* MPOAuthSignatureParameter.h */,
+				A141BA1B728BDF8CADB5491B6ABB1679 /* MPOAuthURLRequest.h */,
+				F3FD17207CD418FD875C4036EBF43D3B /* MPOAuthURLResponse.h */,
+				0CA186229449F9C2B31753B05B439D08 /* MPURLRequestParameter.h */,
+				D2CF246FD266A6615D9F6FDD7EF2B648 /* NSDictionary+Dropbox.h */,
+				0774E1F82B19D38F5E33F849621F4388 /* NSObject+DBJSON.h */,
+				867014394ED056F250B5C0B91A8D4200 /* NSString+DBJSON.h */,
+				D3878093F1300FD0479FD7F3658E3831 /* NSString+Dropbox.h */,
+				5BDD140C632E59CF7447B3E556F5DDD2 /* NSString+URLEscapingAdditions.h */,
+				55CC077BEA36ECEF097AE436BEC1D954 /* NSURL+MPURLParameterAdditions.h */,
+				F17E8EE112CED687F8846B4F29583329 /* NSURLResponse+Encoding.h */,
+			);
+			path = "Dropbox-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				636BC752E7946EF6919A00D1F8EAE693 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9BCED93DBADE5A374D149B90417C9C4C /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
+				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
+				F544E664EA23C82471AAB47D479D781B /* Pods-dummy.m */,
+				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
+				039B5D6B0F0C209CA1433634F21E3CD1 /* Pods.debug.xcconfig */,
+				2911C90045EF579F81BD9E92797F5CF3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		9BCED93DBADE5A374D149B90417C9C4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				107F4F336E5C898276DB80E2172D58F1 /* Dropbox-iOS-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEEDA5F6291892906F3CBBF39B8BC98F /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				952EEBFAF8F7E620423C9F156F25A506 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1469924FC52F60B0068FA24EEFCB3EFC /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C358AA8BB91700063133597D41C4E0E /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				60DB2522D6809309FA2F3B04848E7536 /* Sources */,
+				2E78C4AC537A1782BCFD134B2B8940E0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = AEEDA5F6291892906F3CBBF39B8BC98F /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1469924FC52F60B0068FA24EEFCB3EFC /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60DB2522D6809309FA2F3B04848E7536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B991A49F4C12A4F8462C02B69D83DB11 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58FB81DAEDB38D05BAD33920A5B5D63D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59433FEC8314E63801FA0A27AB72DB7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039B5D6B0F0C209CA1433634F21E3CD1 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B4B07803AB510FBB2D0AC9D2E485ACD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2911C90045EF579F81BD9E92797F5CF3 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BEF1BC204DE94B02454F00D0FC406B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF1BC204DE94B02454F00D0FC406B16 /* Debug */,
+				58FB81DAEDB38D05BAD33920A5B5D63D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C358AA8BB91700063133597D41C4E0E /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59433FEC8314E63801FA0A27AB72DB7B /* Debug */,
+				B4B07803AB510FBB2D0AC9D2E485ACD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

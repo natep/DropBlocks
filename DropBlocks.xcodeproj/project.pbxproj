@@ -26,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		286B19289CA845DDBF5A6D31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		560B541E61741189386A0325 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6166E91624F65600311E19 /* DropBlocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropBlocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6166ED1624F65600311E19 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A6166EF1624F65600311E19 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,7 +46,7 @@
 		9A61671F1624FB0D00311E19 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9A6167201624FB0D00311E19 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		9AE76B03162E57950026CBDE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		D488E4E3973E435DAC4F8220 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B972FF23724FE24DACF246AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,14 +64,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4419E91547C15FE898D3FEA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				560B541E61741189386A0325 /* Pods.debug.xcconfig */,
+				B972FF23724FE24DACF246AE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9A6166DE1624F65600311E19 = {
 			isa = PBXGroup;
 			children = (
 				9A6166F31624F65600311E19 /* DropBlocks */,
 				9A6166EC1624F65600311E19 /* Frameworks */,
-				D488E4E3973E435DAC4F8220 /* Pods.xcconfig */,
 				9A6166EA1624F65600311E19 /* Products */,
 				9A61671C1624FAF600311E19 /* Text Files */,
+				4419E91547C15FE898D3FEA8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,7 +226,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -296,11 +306,12 @@
 		};
 		9A6167081624F65600311E19 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D488E4E3973E435DAC4F8220 /* Pods.xcconfig */;
+			baseConfigurationReference = 560B541E61741189386A0325 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropBlocks/DropBlocks-Prefix.pch";
 				INFOPLIST_FILE = "DropBlocks/DropBlocks-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -308,7 +319,7 @@
 		};
 		9A6167091624F65600311E19 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D488E4E3973E435DAC4F8220 /* Pods.xcconfig */;
+			baseConfigurationReference = B972FF23724FE24DACF246AE /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropBlocks/DropBlocks-Prefix.pch";

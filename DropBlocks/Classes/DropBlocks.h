@@ -7,8 +7,13 @@
 
 #import <Foundation/Foundation.h>
 
-#import <DropboxSDK/DropboxSDK.h>
-#import <DropboxSDK/DBDeltaEntry.h>
+#ifdef COCOAPODS
+	#import "DropboxSDK.h"
+	#import "DBDeltaEntry.h"
+#else
+	#import <DropboxSDK/DropboxSDK.h>
+	#import <DropboxSDK/DBDeltaEntry.h>
+#endif
 
 typedef void (^LoadMetadataCallback)(DBMetadata *metadata, NSError *error);
 typedef void (^LoadDeltaCallback)(NSArray *entries, BOOL shouldReset, NSString *cursor, BOOL hasMore, NSError *error);
